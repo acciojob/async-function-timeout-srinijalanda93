@@ -3,7 +3,7 @@ document.getElementById("btn").addEventListener("click",async ()=>{
 	const delay=document.getElementById("delay").value;
 	//create a Promise Class where it take the text in delay ms
 	if(text && delay){
-	let p=new Promise((reslove,reject) =>{
+	let p=new Promise((resolve,reject) =>{
 		setTimeOut(()=>{
 			resolve(text)
 		},delay);
