@@ -3,13 +3,13 @@ document.getElementById("btn").addEventListener("click",async ()=>{
 	const delay=document.getElementById("delay").value;
 	//create a Promise Class where it take the text in delay ms
 	if(text && delay){
-	let pro=new Promise((reslove,reject) =>{
+	let p=new Promise((reslove,reject) =>{
 		setTimeOut(()=>{
 			resolve(text)
 		},delay);
 	})
 	//using await keyword
-		let text2=await pro;
+		let text2=await p;
 		if(text2){
 			document.getElmentById("output").textContent=text2;
 		}
